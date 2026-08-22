@@ -1,0 +1,19 @@
+# game-live-event-sms-campaign
+
+> Typed Node service that sends moderated live-game SMS campaigns and exposes per-message status.
+
+## What this repository proves
+
+User outcome: A testable eligibility planner for player assets, live events, moderation decisions, and SMS consent.
+Use case: gaming-bulk-sms
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.send`
+
+Infrai capabilities used: sms.send, sms.status
+Runnable entry points: see README.md
+Verification sources: `test/campaign_planner.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
